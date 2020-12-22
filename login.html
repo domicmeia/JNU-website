@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login - Mustache Enthusiast</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="menubar">
+		<a href="login.html">login</a>
+		<a href="join.html">sign up</a>
+		<a onclick="showPopup();">contact</a>
+		<script language="javascript">
+		function showPopup(){window.open("contact.html","a","width=400,height=300,left=100,top=50");}</script>
+		<form id="search">
+			<input type="text" placeholder="Search..">
+			<button>SEARCH</button>
+		</form>
+	</div>
+	<div id="header">
+		<a href="index.html" class="logo">
+			<img src="images/logo.png" alt="">
+		</a>
+		<ul id="navigation">
+	        <li>
+				<a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="about.html">about</a>
+			</li>
+			<li>
+				<a href="article.html">article</a>
+			</li>
+			<li>
+				<a href="playlist.html">playlist</a>
+			</li>
+			<li>
+				<a href="recommend.html">recommend</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div id="body">
+		<h1><span>LOGIN</span></h1>
+		<form action="contact.html">
+			<input type="text" name="email" id="email" placeholder="Username">
+			<input type="password" name="password" id="password" placeholder="Password">
+			<input type="submit" name="send" id="send" value="Login"><h2> If you are not the member? then <a href="join.html">join</a> us!</h2>
+		</form>
+	</div>
+	<div id="footer">
+		<div>
+			<p>&copy; 2020 by Domic. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+</html>

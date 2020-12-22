@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Watch How We Jazz</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="css/reset2.css">
+	<script type="text/javascript" src="http://heroyooi.ivyro.net/admin/jQuery/common/js/jquery.min.js"></script>
+	<script type="text/javascript" src="http://heroyooi.ivyro.net/admin/jQuery/common/js/jquery.bxslider.js"></script>
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+		.sec_slide_section { position:relative; background:pink url('img/hanssem/con_shadow_bg.png') left top repeat-x; background-size:auto 4px; padding:11px 0 70px 0;  }
+		.sec_slider_wrap { position:relative; width:180%; right:40%; }
+		.sec_slider { width:100%; }
+		.sec_slider:after { content:""; display:block; clear:both; }
+		.sec_slider li { position:relative; background:#fff; }
+		.sec_slider li > a {display:block;}
+		.sec_slider dt img { border:1px solid #e0e4e7; width:100%; }
+		.sec_slider dd {height:70px; padding:10px;}
+		.sec_slider dd p.tit { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical; overflow:hidden; height:32px; margin-bottom:6px; font-size:12px; color:white; background:black; line-height:16px; text-overflow:ellipsis; word-wrap:break-word; }
+		.sec_slider dd p.con { font-size:12px; line-height:1.4; }
+		.sec_slider div.pro_price:after {display:block;clear:both;content:'';}
+		.sec_slider div.pro_price p { display:inline-block; vertical-align:middle; }
+		.sec_slider div.pro_price p.dc {float:left;width:28px;height:28px;margin-right:10px;padding:0;background:#ff1b1b;font-size:12px;font-family:'Roboto', sans-serif;font-weight:bold;color:#fff;line-height:28px;text-align:center;}
+		.sec_slider div.pro_price p.dc span { font-size:10px;font-family:'Roboto', sans-serif; }
+		.sec_slider div.pro_price p.before_price { display:block; margin-right:3px; font-size:10px; color:#999; vertical-align:middle; }
+		.sec_slider div.pro_price p.before_price span { font-family:'Roboto', sans-serif; font-size:10px; text-decoration:line-through; color:#999;  vertical-align:middle; }
+		.sec_slider div.pro_price p.after_price { display:block; font-size:11px; color:#333; vertical-align:middle; }
+		.sec_slider div.pro_price p.after_price span { font-family:'Roboto', sans-serif; font-weight:bold; font-size:15px; color:#333;  vertical-align:middle; }
+		.sec_slider div.pro_price .price_box {float:left;}
+		.sec_slider dl dd p.score {margin-top:6px;width: 70px;height: 11px;background: url('img/hanssem/main/star_icon_gray.png') 0 0 no-repeat;-webkit-background-size: 100%;background-size: 100%;position: relative;}
+		.sec_slider dl dd p.score span { font-family:'Roboto', sans-serif; font-size:11px; color:#999; }
+		.sec_slider dl dd p.score strong { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;overflow: hidden; }
+		.sec_slider dl dd p.score em { font-style: normal; display: block; position: absolute; top: -1px; left: 74px; }
+		.sec_slider dl dd p.score strong img { display: block;width: 70px;height: 11px; max-width: none;}
+
+		.sec_slider_num_wrap { position:absolute; bottom:7px; text-align:center; width:100%; }
+		.sec_slider_num { margin:0 auto; display:inline-block; background-color:rgba(0, 0, 0, 0.5); padding:5px 7px; border-radius:12px; }
+		.sec_slider_num span { vertical-align:middle; color:#fff; font-size:12px; color:#fff; }
+		.sec_slider_num span.bridge { display:inline-block; margin:0 4px; }
+		.sec_slider_num img { width:inherit; vertical-align:middle; }
+		</style>
+</head>
+<body>
+	<div id="menubar">
+		<a href="login.html">login</a>
+		<a href="join.html">sign up</a>
+		<a onclick="showPopup();">contact</a>
+		<script language="javascript">
+		function showPopup(){window.open("contact.html","a","width=400,height=300,left=100,top=50");}</script>
+		<form id="search">
+			<input type="text" placeholder="Search..">
+			<button>SEARCH</button>
+		</form>
+	</div>
+	<div id="header">
+		<a href="index.html" class="logo">
+			<img src="images/logo.png" alt="">
+		</a>
+		<ul id="navigation">
+			<li class="selected">
+				<a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="about.html">about</a>
+			</li>
+			<li>
+				<a href="article.html">article</a>
+			</li>
+			<li>
+				<a href="playlist.html">playlist</a>
+			</li>
+			<li>
+				<a href="recommend.html">recommend</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<div id="featured">
+			<img src="images/main1.jpg" alt="">
+			<div>
+				<span><b>환영합니다!</b> 이 사이트는 재즈 앨범들을 소개하고 있습니다.</span>
+				<span>재즈에 대한 자세한 내용은 준비중이지만, <b>장르별 플레이리스트</b>를 즐기실 수 있습니다.</span>
+				<span>또한 재즈와 관련된 최신 이슈들과 최신 재즈 앨범들을 알려드리고 있습니다.</span>
+				<span>자세한 내용은 <a href="about.html"><b>ABOUT</b></a>에서 확인하세요!</span>
+				<span>문의는 <a onclick="showPopup();"><b>CONTACT</b></a>에서 부탁드립니다.</span>
+			</div>
+		</div>
+		<ul>
+			<h4>What's jazz</h4>
+			<li>
+				<a href="gallery.html">
+					<img src="images/left.png" alt="">
+					<span>Improvisation</span>
+				</a>
+				<div>
+						<h3>보컬의 즉흥 연주 '스캣'</h3>
+						<p>
+							스캣의 시초는 루이 암스트롱이 트럼펫 연주를 하다가 입으로 트럼펫 소리를 흉내 낸 것을 시작으로, 보컬들이 솔로를 연주할 때 악기 소리를 내며 스캣으로 즉흥연주를 하게 되었다. 
+						</p>
+				</div>
+			</li>
+			<li>
+				<a href="gallery.html">
+					<img src="images/center.png" alt="">
+					<span>Rhythm</span>
+				</a>
+				<div>
+						<h3>재즈의 리듬 '스윙'</h3>
+						<p>
+							스윙은 '흥'또는 리듬에 맞추어 고개나 발끝을 까딱이게 되는 작위적이지 않은 자연스러운 신체적 반응들을 일컫는다. 예를 들어 "이 노래를 들으니까 갑자기 그루브를 타고 싶어!"라는 느낌이다. 
+						</p>
+				</div>
+			</li>
+			<li>
+				<a href="gallery.html">
+					<img src="images/right.png" alt="">
+					<span>Vocals</span>
+				</a>
+				<div>
+						<h3>'즉흥성'과 '블루노트'의 결합</h3>
+						<p>
+							재즈의 기본이 되는 즉흥성과 블루 노트(각 조성의 b3 b5 b7음)를 곡에 적용해서 기악적 요소로 보컬의 음악 프레이즈 연주나 솔로연주 등을 한다.
+						</p>
+				</div>
+			</li>
+		</ul>
+		<ul class="slides">
+			<h4>New album</h4>
+			<div class="sec_slide_section">
+			<div class="sec_slider_wrap">
+				<ul class="sec_slider">
+					<li>
+						<a href="https://www.genie.co.kr/detail/albumInfo?axnm=81549887">
+							<dl>
+								<dt><img src="images/robert.jpg" alt="" /></dt>
+								<dd>
+									<p class="tit">Better Than I Imagined</p>
+									<p class="con">Robert Glasper</p>
+								</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.genie.co.kr/detail/albumInfo?axnm=81667796">
+							<dl>
+								<dt><img src="images/melody.jpg" alt="" /></dt>
+								<dd>
+									<p class="tit">Sunset In The Blue</p>
+									<p class="con">Melody Gardot</p>
+								</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.genie.co.kr/detail/albumInfo?axnm=81503277">
+							<dl>
+								<dt><img src="images/redman.jpg" alt="" /></dt>
+								<dd>
+									<p class="tit">RoundAgain</p>
+									<p class="con">Brad Mehldau</p>
+								</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.genie.co.kr/detail/albumInfo?axnm=81501126">
+							<dl>
+								<dt><img src="images/eddie.jpg" alt="" /></dt>
+								<dd>
+									<p class="tit">Cook's Bay</p>
+									<p class="con">Eddie Henderson</p>
+								</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.genie.co.kr/detail/albumInfo?axnm=81593528">
+							<dl>
+								<dt><img src="images/rymden.jpg" alt="" /></dt>
+								<dd>
+									<p class="tit">The Space Sailor</p>
+									<p class="con">Dan Berglund</p>
+								</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.genie.co.kr/detail/albumInfo?axnm=81557736">
+							<dl>
+								<dt><img src="images/gate.jpg" alt="" /></dt>
+								<dd>
+									<p class="tit">The Autumn Gate</p>
+									<p class="con">Tim Garland</p>
+								</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- // sec_slider_wrap -->
+			<div class="sec_slider_num_wrap">
+				<p class="sec_slider_num">
+					<span class="current_value"></span>
+					<span class="bridge"><img src="images/slide_num_bar.png"></span>
+					<span class="total_value"></span>
+				</p>
+			</div>
+		</div>
+		<!-- // sec_slide_section -->
+
+		<!-- 스크립트 -->
+		<script type="text/javascript">
+		secSlider = $('.sec_slider').bxSlider({
+			auto: true,
+			pager: false,
+			minSlides: 4,
+			maxSlides: 4,
+			moveSlides: 1,
+			slideWidth: 149,
+			slideMargin: 9,
+			onSliderLoad: function(){
+				$('.bx-viewport').css({
+					'left': '25.5%',
+					'overflow': 'inherit'
+				});
+			},
+			onSlideBefore: function(){
+				var current = secSlider.getCurrentSlide()+1;
+				$('p.sec_slider_num .current_value').text( current );
+				$('p.sec_slider_num .total_value').text( slideQty );
+			}
+		});
+		var current = secSlider.getCurrentSlide()+1;
+		var slideQty = secSlider.getSlideCount();
+		$('p.sec_slider_num .current_value').text( current );
+		$('p.sec_slider_num .total_value').text( slideQty );
+		</script>
+		</ul>
+	</div>
+	<div id="footer">
+		<div>
+			<p>&copy; 2020 by domic. All rights reserved.</p>
+		</div>
+	</div>
+</body>
+</html>
